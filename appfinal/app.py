@@ -1,6 +1,4 @@
 from flask import Flask, render_template
-import json
-import datetime as dt
 
 app = Flask(__name__)
 
