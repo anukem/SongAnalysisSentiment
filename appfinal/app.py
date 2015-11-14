@@ -3,7 +3,6 @@ from songdictionary import getSentValue
 from songdictionary import getSongUrlFromValue
 import json
 import datetime as dt
-
 app = Flask(__name__)
 
 @app.route("/")
