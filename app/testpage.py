@@ -1,13 +1,15 @@
 from flask import Flask
-import songdictionary
+from songdictionary import getSentValue
+from songdictionary import getSongUrlFromValue
 app = Flask(__name__)
 
 from flask import render_template
 @app.route("/")
-def songUrl():
+def testpage():
+    value = 1
     link = getSongUrlFromValue(value)
-    return link
-    # return render_template('testpage.html', songUrl = link)
+    return render_template('testpage.html', songUrl = link)
 
 if __name__ == '__main__':
-    app.run()
+    app.debut = True
+    app.run(host='0.0.0.0')

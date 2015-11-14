@@ -1,9 +1,3 @@
-# Generate some random value between -1 and 1, only used for testing.
-# Will need to get the value from the sentiment analysis for this
-import random
-value = random.uniform(-1.0, 1) 
-print value
-
 # Use a switch statement to correlate that value to our code
 def getSentValue(value):
         if    ((-1.0 <= value) & (value < -0.8)):
@@ -44,5 +38,3 @@ def getSongUrlFromValue(value):
                  0.8 : 'happiysh song',
                  1.0 : 'https://songanalysis.blob.core.windows.net/songs/10_happy'} 
         return songdisc[sentValue]
-
-print getSongUrlFromValue(value)
