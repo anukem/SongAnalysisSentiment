@@ -13,7 +13,7 @@ body {
 	border-style: solid;
 	border-color:#0099CC;
 	border-radius: 10px;
-	width:400px;
+	width:30%;
 	margin:auto;
 }
 #header{
@@ -76,4 +76,7 @@ h2{
 .btn{
 	font-size:20px;
 	font-weight: 590;
+}
+.btn:hover{
+	color:red;
 }
