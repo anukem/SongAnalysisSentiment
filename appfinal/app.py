@@ -15,7 +15,6 @@ def music():
     link = getSongUrlFromValue(value)
     return render_template('testpage.html', songUrl = link)
 
-# Added this because it wouldn't start
 if __name__ == '__main__':
     app.debut = True
-    app.run(host='0.0.0.0')
+    app.run()
