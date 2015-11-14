@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>Song Analysis</title>
+	<!--  these links are the bootstrap css and js graciously provided by     -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+	<!--    https://www.bootstrapcdn.com/   -->
+	<link type="text/css" rel="stylesheet" href="app copy/static/css/main.css"/>
+</head>
+
+<body>
+
+	<div id="outercontainer">
+	
+		<div id="container">
+		
+			<div id="header">
+				<h2>News Feels</h2>		
+
+			</div>
+
+			<div id="choices">
+			<form name="preferences" method="post" action="action.php">
+				<span class="smalltext">URL?</span>
+				<div id="choice1">
+					<input class="btn" type="text" name="weblink">
+				</div>
+				<span class="smalltext">SCROLL SPEED?</span>
+				<div id="choice2" class="btn-group" data-toggle="buttons-radio">
+					<button type="button" class="btn btn-primary">Slow</button>
+					<button type="button" class="btn btn-primary">Medium</button>
+					<button type="button" class="btn btn-primary">Fast</button>
+				</div>
+				<br>
+				<span class="smalltext">BEAT OR SONG?</span>
+				<br>
+				<div id="choice3" class="btn-group" data-toggle="buttons-radio">
+					<button type="button" class="btn btn-primary">Beat</button>
+					<button type="button" class="btn btn-primary">Song</button>
+				</div>
+				<br>				
+				<div id="choice4">
+					<input class="btn" type="submit" value="Submit"> 
+				</div>
+				
+			</form> 			
+			</div>
+		
+		</div>
+	
+		</div>
+	
+
+
+<!--
+	<div id="outercontainer">
+	
+		<div id="midcontainer">
+		
+			<div id="head">
+				<h2>Song Analysis</h2>		
+			</div>
+			
+			<form name="preferences" method="post" action="action.php">
+			
+				URL:
+				<br>
+				<input class="btn" type="text" name="weblink">
+				<br>
+				<br>
+				SCROLL SPEED:
+				<br>
+				<div class="btn-group" data-toggle="buttons-radio">
+					<button type="button" class="btn btn-primary">Slow</button>
+					<button type="button" class="btn btn-primary">Medium</button>
+					<button type="button" class="btn btn-primary">Fast</button>
+				</div>	
+				<br>
+				<br>
+				<br>
+				<div class="btn-group" data-toggle="buttons-radio">
+					<button type="button" class="btn btn-primary">Beat</button>
+					<button type="button" class="btn btn-primary">Song</button>
+				</div>	
+				<br>
+				<br>
+				<input class="btn" type="submit" value="Submit"> 
+			</form> 	
+		</div>
+	</div>
+-->
+	</body>
+
+</html>
