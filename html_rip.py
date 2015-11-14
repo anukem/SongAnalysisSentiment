@@ -7,13 +7,11 @@ import urllib.request
 import re
 import pprint as pp
 
-# *************************************************************************** #
-
+   
 def get_html(website):
 	"""Rips the body text from the page"""
-	with urllib.request.urlopen(website) as page:
-		html = page.read()
-		soup = BeautifulSoup(html)
+	with urllib.request.urlopen(url2) as page:
+		soup = BeautifulSoup(page)
 		body = soup.body
 		texts = body.findAll(text=True)
 
@@ -28,6 +26,8 @@ def visible(element):
 	if element.parent.name in tags:
 		return False
 	elif re.match('<!--.*-->', str(element)):
+		return False
+	elif re.match('/*.*/', str(element)):
 		return False
 	else:
 		return True
@@ -44,3 +44,5 @@ def main(website):
 
 if __name__ == "__main__":
 	main(url)
+
+pp.pprint(get_html(url))
