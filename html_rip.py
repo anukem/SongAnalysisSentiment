@@ -1,9 +1,11 @@
+# Programming to Rip Body Text of HTML
+# to be put into alchemy API for sentiment analysis
+
+# imports
 from bs4 import BeautifulSoup
 import urllib.request
 import re
 import pprint as pp
-
-url1 = "http://pathsensitive.blogspot.com/2015/08/sources-of-power.html"
 
 # *************************************************************************** #
 
