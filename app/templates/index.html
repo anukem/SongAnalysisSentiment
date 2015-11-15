@@ -6,8 +6,13 @@
 
 	<meta charset="UTF-8">
 	<title>Song Analysis</title>
+	
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	<!--
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="../static/css/main.js"></script>
+	-->
 	<link type="text/css" rel="stylesheet" href="../static/css/main.css">
 <body>
 
@@ -27,17 +32,24 @@
 					<input class="btn" type="text" name="weblink">
 				</div>
 				<span class="smalltext">SCROLL SPEED?</span>
-				<div id="choice2" class="btn-group" data-toggle="buttons-radio">
-					<button type="button" class="btn  btn-primary">Slow</button>
-					<button type="button" class="btn btn-primary">Medium</button>
-					<button type="button" class="btn btn-primary">Fast</button>
+				<br>
+				<span class="smalltext2">Between -1 and 1</span>
+				<div id="choice2">
+					<input class="btn" type="text" name="weblink2">
 				</div>
+<!--			<div id="choice2" class="btn-group" data-toggle="buttons-radio">
+					
+					<button type="button" class="btn btn-primary speed1" value="Slow">Slow</button>
+					<button type="button" class="btn btn-primary speed2" value="Medium">Medium</button>
+					<button type="button" class="btn btn-primary speed3" value="Fast">Fast</button>
+					
+				</div>-->	
 				<br>
 				<span class="smalltext">BEAT OR SONG?</span>
 				<br>
 				<div id="choice3" class="btn-group" data-toggle="buttons-radio">
-					<button type="button" class="btn btn-primary">Beat</button>
-					<button type="button" class="btn btn-primary">Song</button>
+					<input type="button" class="btn btn-primary beat1" value="Beat"></button>
+					<input type="button" class="btn btn-primary beat2" value="Song"></button>
 				</div>
 				<br>				
 				<div id="choice4">
