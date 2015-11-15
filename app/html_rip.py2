@@ -1,7 +1,12 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 # PYTHON 2
 
 # Programming to Rip Body Text of HTML
 # to be put into alchemy API for sentiment analysis
+
+_input = raw_input("link or text: ")
 
 # imports
 from bs4 import BeautifulSoup
@@ -22,10 +27,10 @@ def to_text(website):
 
 def get_html(website):
 	"""Rips the body text from the page"""
-	with urllib2.urlopen(website) as page:
-		soup = BeautifulSoup(page)
-		body = soup.body
-		texts = body.findAll(text=True)
+	page = urllib2.urlopen(website)
+	soup = BeautifulSoup(page)
+	body = soup.body
+	texts = body.findAll(text=True)
 
 	return texts
 
@@ -37,10 +42,10 @@ def visible(element):
 
 	if element.parent.name in tags:
 		return False
-	elif re.match('<!--.*-->', str(element)):
-		return False
+	# elif re.match('<!--.*-->', str(element)):
+	# 	return False
 	# elif re.match('/*.*/', str(element)):
-	# 	return Falsef
+	# 	return False
 	else:
 		return True
 
