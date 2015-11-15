@@ -1,7 +1,7 @@
 # Programming to Rip Body Text of HTML
 # to be put into alchemy API for sentiment analysis
 
-# url= input("Link: ")
+url= input("Link: ")
 
 # imports
 from bs4 import BeautifulSoup
